@@ -1,7 +1,7 @@
 {
-  "name": "webstorm_essentials_debugging",
+  "name": "webstorm_essentials_testing",
   "version": "1.0.0",
-  "description": "webstorm_essentials_debugging sample code",
+  "description": "webstorm_essentials_testing sample code",
   "main": "fib.js",
   "repository": {
     "type": "git",
@@ -14,7 +14,6 @@
   },
   "homepage": "https://github.com/srosca/webstorm_essentials_debugging#readme",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-serve": "^0.1.6"
+
   }
 }
