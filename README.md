@@ -1,12 +1,10 @@
-# WebStorm Essentials Debugging
+# WebStorm Essentials Testing
 
-Sample code for the WebStorm Essentials Chapter 7
+Sample code for the WebStorm Essentials Chapter 8
 
 To install dependencies run 
     
     npm install
 
-Serve by running 
-    
-    grunt serve
+
     
