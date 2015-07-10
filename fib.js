@@ -69,9 +69,7 @@ fib = util.memoize(fib);
 for (var i = 1; i < 100; i++) {
     var isNode = false;
 
-    // Export the Underscore object for **CommonJS**, with backwards-compatibility
-    // for the old `require()` API. If we're not in CommonJS, add `_` to the
-    // global object.
+    // Simple check to see if we are in node
     if (typeof module !== 'undefined' && module.exports) {
         isNode = true;
     }
