@@ -65,20 +65,12 @@ var fib = function (n) {
 fib = util.memoize(fib);
 
 
+var isNode = false;
 
-for (var i = 1; i < 100; i++) {
-    var isNode = false;
+if (typeof module !== 'undefined' && module.exports) {
+    isNode = true;
+}
 
-    // Simple check to see if we are in node
-    if (typeof module !== 'undefined' && module.exports) {
-        isNode = true;
-    }
-
-    if (isNode){
-        console.log(fib(i))
-    }else{
-        var div = document.createElement('div');
-        div.textContent = 'i: ' + i + ' - fib :' + fib(i);
-        document.body.appendChild(div);
-    }
+if (isNode) {
+    module.exports = { fib: fib };
 }
